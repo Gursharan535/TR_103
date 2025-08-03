@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TR-103 | Prompt Engineering Training</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Roboto&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --green: #b6c1a3;
+      --light-bg: #f7f7f7;
+      --white: #ffffff;
+      --dark: #1c1c1c;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Roboto', sans-serif;
+    }
+
+    body {
+      background-color: var(--light-bg);
+      color: var(--dark);
+    }
+
+    header {
+      background: var(--white);
+      padding: 20px 50px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    header h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 26px;
+    }
+
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: var(--dark);
+      font-weight: bold;
+    }
+
+    .hero {
+      background-color: var(--green);
+      padding: 60px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: var(--white);
+      flex-wrap: wrap;
+    }
+
+    .hero-text {
+      flex: 1;
+      min-width: 280px;
+      margin-left: 60px; 
+    }
+
+    .hero-text h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 36px;
+      margin-bottom: 15px;
+    }
+
+    .hero-text p {
+      max-width: 500px;
+    }
+
+    .hero-img {
+      flex: 1;
+      text-align: center;
+    }
+
+
+  .hero-img img {
+    width: 100%; /* or set a fixed width like 600px */
+    max-width: 400px;
+    height: auto; /* maintain aspect ratio */
+    display: block;
+    margin: 0 auto; /* center image */
+  }
+
+    .section {
+      padding: 60px 80px;
+      background: var(--white);
+    }
+
+    .section h3 {
+      font-family: 'Playfair Display', serif;
+      font-size: 28px;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    .cards {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .card {
+      background: var(--light-bg);
+      padding: 20px;
+      border-radius: 12px;
+      width: 280px;
+      text-align: center;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .card img {
+      width: 100%;
+      height: 160px;
+      object-fit: cover;
+      border-radius: 8px;
+      margin-bottom: 10px;
+    }
+
+    .extra-images {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      margin-top: 40px;
+    }
+
+    .extra-images img {
+      width: 300px;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 12px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .upload-section {
+      background: var(--green);
+      padding: 60px 80px;
+      color: var(--white);
+      text-align: center;
+    }
+
+    .upload-section h3 {
+      font-family: 'Playfair Display', serif;
+      font-size: 28px;
+      margin-bottom: 20px;
+    }
+
+    .upload-section p {
+      margin-bottom: 30px;
+    }
+
+    .upload-section a.button {
+      background-color: var(--white);
+      color: var(--dark);
+      padding: 12px 24px;
+      border-radius: 6px;
+      font-weight: bold;
+      text-decoration: none;
+      margin: 10px;
+      display: inline-block;
+    }
+
+    footer {
+      background: var(--white);
+      padding: 40px 50px;
+      text-align: center;
+      font-size: 14px;
+      color: #777;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>TR-103 | GNDEC</h1>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="daily-task.html">Daily Task</a>
+      <a href="daily-diary.html">Daily Diary</a>
+    </nav>
+  </header>
+
+  <section class="hero" id="home">
+    <div class="hero-text">
+      <h2>Prompt Engineering Training</h2>
+      <p>Welcome to TR-103, a professional training program by Guru Nanak Dev Engineering College designed to equip you with prompt engineering excellence and practical skills.</p>
+    </div>
+    <div class="hero-img">
+      <img src="images/1683165775834.jpeg" alt="Hero Image">
+    </div>
+  </section>
+
+  <section class="section" id="tasks">
+    <h3>Daily Tasks Overview</h3>
+    <div class="cards">
+      <div class="card">
+        <img src="images/image1.webp" alt="Task 1">
+        <p>Problem Solving Sessions</p>
+      </div>
+      <div class="card">
+        <img src="images/image 2.jpg" alt="Task 2">
+        <p>Prompt Engineering Techniques</p>
+      </div>
+      <div class="card">
+        <img src="images/image3.jpeg" alt="Task 3">
+        <p>Collaboration Assignments</p>
+      </div>
+    </div>
+    
+  </section>
+
+  <section class="upload-section" id="diary">
+    <h3>Explore More</h3>
+    <p>View detailed task submissions and upload daily diary PDFs on the following pages.</p>
+    <a href="daily-task.html" class="button">Go to Daily Task Page</a>
+    <a href="daily-diary.html" class="button">Go to Daily Diary Page</a>
+  </section>
+
+  <footer>
+    &copy; 2025 TR-103 | Guru Nanak Dev Engineering College. All rights reserved.
+  </footer>
+</body>
+</html>
