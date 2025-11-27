@@ -1,0 +1,2 @@
+{"messages": [{"role": "user", "content": "Write a C++ function to check if a number is prime."}, {"role": "model", "content": "bool isPrime(int n) {\n  if(n <= 1) return false;\n  for(int i=2; i*i<=n; i++)\n    if(n % i == 0) return false;\n  return true;\n}"}]}
+{"messages": [{"role": "user", "content": "Write a C++ program to add two numbers."}, {"role": "model", "content": "#include<iostream>\nusing namespace std;\nint main() {\n  int a = 5, b = 10;\n  cout << a + b;\n  return 0;\n}"}]}
